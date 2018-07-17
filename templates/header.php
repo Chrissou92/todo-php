@@ -16,7 +16,27 @@
 
 
                     <!-- classe active ou pas  -->
-                    <a href="index.php?filter=<?=$label?>" class="<?=($index === 0 ? 'item activ' : '')?>item"><?=$label?></a>
+
+
+                    <!-- si on as cliqué sur aucun filtre -->
+                    <?php if (!isset($_GET['filter']) && $index === 0 ): ?>
+                        <a href="index.php?filter=<?=$label?>" class="item activ"><?=$label?></a>
+
+                        <!-- on as cliqué sur un filtre et -->
+                    <?php elseif (isset($_GET['filter']) && $_GET['filter'] === $label): ?>
+                    <a href="index.php?filter=<?=$label?>" class="item activ"><?=$label?></a>
+
+                    <!-- on as un bouton normal sans class activ-->
+                <?php else: ?>
+                    <a href="index.php?filter=<?=$label?>" class="item"><?=$label?></a>
+                    
+                <?php endif; ?>
+
                     <?php endforeach; ?>
+            </nav>
+            <nav class="filters">
+                <a class="item task-work"href="">Travail</a>
+                <a class="item task-perso"href="">personnel</a>
+                <a class="item task-cart"href="">liste de course</a>
             </nav>
         </header>

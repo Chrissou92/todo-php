@@ -83,7 +83,7 @@ li.done {
 .task-work { border-left-color: red; color: red; }
 .task-perso { border-left-color: blue; color: blue; }
 .task-cart { border-left-color: orange; color: orange; }
-.task-green { border-left-color: green; color: green; }
+
 
 /* Barre de séparation entre la liste et le formulaire de création */
 hr {
