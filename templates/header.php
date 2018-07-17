@@ -14,7 +14,7 @@
             <nav class="filters">
                 <?php foreach ($filters as $index => $label): ?>
                     <!-- classe active ou pas  -->
-                    <a class="<?=($index === 0 ? 'activ' : '')?>"><?=$label?></a>
+                    <a class="<?=($index === 0 ? 'item activ' : '')?>item"><?=$label?></a>
                     <?php endforeach; ?>
             </nav>
         </header>
