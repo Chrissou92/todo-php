@@ -1,3 +1,5 @@
+<main>
+
 <ul class="tasks">
     <li class="task-red">
         <span class="item-label">Le texte de la tâche 2</span>

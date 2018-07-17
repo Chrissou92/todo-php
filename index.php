@@ -1,3 +1,10 @@
-<?php require('templates/header.php'); ?>
-<?php require('templates/content.php'); ?>
-<?php require('templates/footer.php'); ?>
+<?php
+
+$title = 'Todolist';
+$filters = ['All', 'Completed', 'Todo'];
+
+require('templates/header.php');
+require('templates/content.php');
+require('templates/footer.php');
+
+?>
