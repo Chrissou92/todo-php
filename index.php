@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-
-    </body>
-</html>
+<?php require('templates/header.php'); ?>
+<?php require('templates/content.php'); ?>
+<?php require('templates/footer.php'); ?>
