@@ -62,7 +62,7 @@ if (isset($_GET['filter'])) {
 
     }
     else {
-        applyFilter ( false );
+        $tasks = applyFilter ( false );
     }
 
 }
